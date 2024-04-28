@@ -43,7 +43,7 @@ body {
 header {
   background-color: var(--black);
   height: 100vh;
-  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -557,17 +557,497 @@ footer p {
 
 /* Tablet Design */
 
-@media (max-width: 1100px) {
-  /* nav {
+/* For tablet screens */
+@media screen and (max-width: 1024px) {
+  header {
+    background-color: var(--black);
+    height: 1302px;
     width: 100%;
-    left: 0;
-    right: 0;
-    padding: 36px 100px;
   }
 
-  header,
-  .hero-section,
-  header .wrapper {
-    max-height: 1000px;
-  } */
+  .logo {
+    font-size: 40px;
+  }
+
+  .internet-btn {
+    display: flex;
+  }
+  nav ul {
+    display: none;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* hero section */
+
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .left-side,
+  .right-side {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-side h1 {
+    font-size: 68px;
+    line-height: 85px;
+  }
+
+  .left-side .btn {
+    width: 100%;
+  }
+
+  .right-side {
+    position: relative; /* Change to relative positioning */
+    margin-top: 90px;
+  }
+
+  .elipse {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-image: url("images//Ellipse\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    background-size: contain;
+    width: 700px;
+    height: 700px;
+  }
+
+  .elipse img {
+    width: 600px;
+    height: 700px;
+    margin-bottom: 100px;
+  }
+
+  .skills-circles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+
+  .skill-circle:nth-child(1) {
+    top: calc(50% - 190px); /* Adjust as needed */
+    left: -240px;
+    transform: translateX(-50%);
+  }
+
+  .skill-circle:nth-child(2) {
+    bottom: -120px;
+    left: -330px;
+    transform: translate(-50%, -50%);
+  }
+
+  .skill-circle:nth-child(3) {
+    top: calc(50% - 180px);
+    left: calc(50% + 250px);
+    transform: translateX(-50%);
+  }
+
+  .skill-circle:nth-child(4) {
+    bottom: -120px;
+    left: calc(50% + 330px);
+    transform: translate(-50%, -50%);
+  }
+
+  /* next part */
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-right {
+    width: 100%;
+    margin-top: 10px;
+    order: -1;
+  }
+
+  .about-left {
+    width: 100%;
+  }
+
+  .contain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  /* next part 2 */
+  .my-portfolio {
+    margin: 0 auto;
+  }
+
+  .portfolio-left,
+  .portfolio-right {
+    width: 100%;
+  }
+
+  .portfolio-left {
+    order: -1;
+    margin-bottom: 30px;
+    margin-top: 210px;
+  }
+
+  .portfolio-left img {
+    width: 780px;
+    height: 555px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .my-portfolio {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .portfolio-right {
+    text-align: center;
+    width: 600px;
+  }
+
+  .portfolio-right h2 {
+    font-size: 50px;
+  }
+
+  .portfolio-text {
+    font-size: 18px;
+  }
+  .empty-button {
+    margin-top: 40px;
+  }
+
+  /* Accoumplishment */
+  .awards-section {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .accomplishments {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 60px;
+  }
+
+  .left-border,
+  .right-border {
+    border-radius: 60px;
+  }
+
+  /* Contact Me */
+  .contact-me {
+    width: 90%;
+    height: auto;
+    padding: 60px;
+    border-radius: 30px;
+    margin-top: 150px;
+  }
+
+  .green-line {
+    margin-bottom: 20px;
+  }
+
+  .contact h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .contact p {
+    font-size: 16px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 50px 15px;
+    gap: 50px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+  .awards-section {
+    margin-top: 150px;
+  }
+
+  .accomplishments {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 60px;
+  }
+
+  .left-border,
+  .right-border {
+    border-radius: 60px;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+  header {
+    background-color: var(--black);
+    height: 1145px;
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+  nav ul {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+
+  .internet-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon svg {
+    width: 45px;
+    height: 45px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  nav .btn {
+    display: none;
+  }
+
+  .hero-section {
+    margin-top: 70px;
+  }
+
+  .hero-section .btn {
+    width: 100%;
+  }
+
+  .left-side h1 {
+    font-size: 65px;
+  }
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .right-side {
+    position: relative;
+    margin-top: 90px;
+  }
+
+  .elipse {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-image: url("images//Ellipse\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    background-size: contain;
+    width: 500px;
+    height: 500px;
+  }
+
+  .elipse img {
+    width: 400px;
+    height: 500px;
+    margin-bottom: 100px;
+  }
+
+  .skill-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-circle img {
+    width: 40%;
+    height: 50%;
+  }
+
+  .skills-circles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+
+  .skill-circle:nth-child(1) {
+    top: calc(50% - 75px);
+    left: -190px;
+    transform: translateX(-50%);
+  }
+
+  .skill-circle:nth-child(2) {
+    bottom: -170px;
+    left: -220px;
+    transform: translate(-50%, -50%);
+  }
+
+  .skill-circle:nth-child(3) {
+    top: calc(50% - 85px);
+    left: calc(50% + 190px);
+    transform: translateX(-50%);
+  }
+
+  .skill-circle:nth-child(4) {
+    bottom: -170px;
+    left: calc(50% + 210px);
+    transform: translate(-50%, -50%);
+  }
+  .about-right {
+    width: 100%;
+    margin: 10px;
+  }
+  .about-right h2 {
+    font-size: 48px;
+    line-height: 68px;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    font-size: 15px;
+    width: 400px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+  }
+
+  .contain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  .card {
+    width: 100%;
+  }
+
+  /* Portfolio */
+
+  .my-portfolio {
+    margin-top: 160px;
+  }
+  .portfolio-left,
+  .portfolio-right {
+    width: 100%;
+  }
+
+  .portfolio-left {
+    order: -1;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    margin-left: 27px;
+  }
+
+  .gray-imageshadow {
+    width: 480px;
+    height: 315px;
+    background: var(--gray);
+    border-radius: 40px;
+    transform: rotate(-8.94deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .portfolio-left img {
+    width: 480px;
+    height: 315px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .my-portfolio {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .portfolio-right {
+    text-align: center;
+    width: 470px;
+    margin-top: 35px;
+  }
+
+  .portfolio-right h2 {
+    font-size: 36px;
+  }
+
+  .portfolio-text {
+    font-size: 16px;
+  }
+
+  .empty-button svg {
+    width: 30px;
+    width: 30px;
+  }
+  .btn-none {
+    font-size: 18px;
+    font-size: 18px;
+  }
+
+  /* Testimonail */
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-left {
+    margin-bottom: 30px;
+  }
+
+  .testimonial-right {
+    width: 500px !important;
+    margin-left: 20px !important;
+    text-align: center;
+  }
+  .testimonial-text {
+    font-size: 18px;
+  }
+
+  .circle {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* For desktop screens */
+@media screen and (min-width: 1025px) {
+  .menu-icon {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 }
